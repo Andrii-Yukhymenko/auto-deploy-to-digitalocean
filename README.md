@@ -58,3 +58,47 @@ You’ll see a file similar to this.
 <img src="https://clustercs.com/kb/wp-content/uploads/2018/11/DO11.png" />
 
 Manually add the IP address (which I named as SSH_HOST) into the Github Secrets.
+
+# Step 5: Adding a username
+
+On my server username - `root`.
+
+# Step 6: Server setup for the first time
+Just enter all of these commands in order.
+
+    apt dist-upgrade
+
+
+    apt install nginx
+
+
+    cd /
+
+
+    rm -rf /var/www/html/
+
+
+    cd /var/www
+
+
+    mkdir html
+
+
+    cd /home
+
+
+    mkdir cloned-repo
+
+
+    cd cloned-repo
+
+
+    git clone https://github.com/Andrii-Yukhymenko/auto-deploy-to-digitalocean.git
+
+
+    cd auto-deploy-to-digitalocean/
+
+
+    cp -r app/* /var/www/html
+
+In the last command, app is the name of the folder with the finished build of your site or application (if you are using gulp or npm build).
