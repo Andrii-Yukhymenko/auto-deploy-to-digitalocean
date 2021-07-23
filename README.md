@@ -4,7 +4,7 @@ Automatic deployment of your site or application to any VPS, in my case it is Di
 # Step 1: Generate an SSH Key
 In this case we’ll SSH into the server.
 
-ssh username@host.com
+`ssh username@host.com`
 
 Once you’re in the server, navigate to the .ssh folder. We will generate the SSH key here.
 
